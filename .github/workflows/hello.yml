@@ -14,7 +14,7 @@ jobs:
     - name: Hello world action
       with: # Set the secret as an input
         super_secret: ${{ secrets.TEST_SECRET }}
-        run: echo ${{ secrets.TEST_SECRET }}
+      run: echo ${{ super_secret }}
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
